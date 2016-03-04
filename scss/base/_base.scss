@@ -14,6 +14,17 @@ html, body {
   margin: 0px;
 }
 
+body {
+  background-color: $bodyBackground;
+}
+
+a {
+  @include fontFormat($color: $bodyText);
+  &:hover {
+  @include fontFormat($color: $linkHover);
+  }
+}
+
 
 /**
  * Basic styles for links

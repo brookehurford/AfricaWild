@@ -1,0 +1,64 @@
+.pageWrapper {
+  @include size(100% auto);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  .galleryItem {
+    height: 350px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    h2 {
+      @extend %headerFont;
+      @include fontFormat ($color: $white)
+    }
+  }
+  #safari {
+    width: 50%;
+    h2 {
+      @include position(relative, null null 25% 10%);
+      @extend %textShadow;
+    }
+  }
+  #beach {
+    width: 25%;
+    h2 {
+      @include position(relative, null null 25% 10%);
+      @extend %textShadow;
+    }
+  }
+  #ostrich {
+    width: 25%;
+    h2 {
+      @include position(relative, null null 25% 10%);
+      @extend %textShadow;
+    }
+  }
+  #couple {
+    width: 25%;
+    h2 {
+      @include position(relative, null null 25% 10%);
+      @extend %textShadow;
+    }
+  }
+  #giraffe {
+    width: 25%;
+    h2 {
+      @include position(relative, null null 25% 10%);
+      @extend %textShadow;
+    }
+  }
+  #tour {
+    width: 50%;
+    h2 {
+      @include position(relative, null null 25% 10%);
+      @extend %textShadow;
+    }
+  }
+}

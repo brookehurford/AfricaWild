@@ -16,6 +16,12 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+// Text Formatting
+
 %uppercase {
   text-transform: uppercase;
+}
+
+%textShadow {
+  text-shadow: 1px 1px 1px black;
 }

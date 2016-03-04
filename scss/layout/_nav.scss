@@ -1,3 +1,7 @@
+// =================
+// Main Navigation
+// =================
+
 .mainNav {
   display: flex;
   justify-content: space-between;
@@ -21,5 +25,33 @@
     @extend %uppercase;
     @include fontFormat(16px, $white, $l-spacing: 2px);
     margin-right: 3em;
+  }
+}
+
+// =======================
+// Secondary Navigation
+// =======================
+
+.secondaryNav {
+  @include size(100% 50px);
+  @include flexbox($justify: space-between);
+  @include fontFormat(16px, $bodyText, lighter, $l-spacing: 1.5px);
+  @extend %bodyFont;
+  width: 80%;
+  margin: 1.5em auto;
+  ul {
+    @include flexbox();
+    list-style-type: none;
+  }
+  li {
+    margin: auto 2em;
+  }
+  .search {
+    @include flexbox($justify: space-between);
+    @include size(100px auto);
+    margin-right: 3em;
+    &:hover {
+    @include fontFormat($color: $linkHover);
+    }
   }
 }
