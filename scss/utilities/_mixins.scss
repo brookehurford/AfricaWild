@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// This file contains all application-wide Sass mixins.
+// Mixins
 // -----------------------------------------------------------------------------
 
 @mixin fontFormat ($size: null, $color: null, $weight: null, $l-spacing: null, $l-height: null) {
@@ -24,7 +24,9 @@
       width: $width;
       h2 {
         @include position(relative, null null 25% 10%);
-        @extend %textShadow;
+      }
+      &:hover {
+        cursor: pointer;
       }
     }
   }
@@ -43,6 +45,7 @@
       padding: 1em;
       &:hover {
         @extend %iconScale;
+        cursor: pointer;
       }
     }
   }

@@ -21,4 +21,8 @@
   }
   @include galleryContent(50%, couple, tour);
   @include galleryContent(25%, safari, elephants, ostrich, giraffe);
+  @media screen and #{$tablet} {
+    @include galleryContent(100%, couple, tour);
+    @include galleryContent(50%, safari, elephants, ostrich, giraffe);
+  };
 }

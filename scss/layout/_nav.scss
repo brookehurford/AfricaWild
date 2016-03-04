@@ -5,6 +5,9 @@
 .mainNav {
   display: flex;
   justify-content: space-between;
+  @media screen and #{$smallDesktop} {
+    flex-direction: column;
+  }
   .logo {
     @extend %uppercase;
     @extend %titleFont;
@@ -13,18 +16,31 @@
     margin-top: 0;
     margin-left: 2.5em;
     padding-top: 1.5em;
+    @media screen and #{$smallDesktop} {
+      margin: 0 auto;
+    }
   }
   ul {
     list-style-type: none;
     margin: 0 1.5em;
     padding-top: 3.6em;
     display: flex;
+    @media screen and #{$mediumDesktop} {
+          margin: 0 1em;
+    }
+    @media screen and #{$smallDesktop} {
+      padding: 3%;
+      justify-content: center;
+    }
   }
   li {
     @extend %headerFont;
     @extend %uppercase;
     @include fontFormat(16px, $white, $l-spacing: 2px);
     margin-right: 3em;
+    @media screen and #{$mediumDesktop} {
+      font-size: 14px;
+    }
   }
 }
 
@@ -50,8 +66,15 @@
     @include flexbox($justify: space-between);
     @include size(100px auto);
     margin-right: 3em;
+    img {
+      @include size(20px 40px);
+      margin-top: 6%;
+    }
     &:hover {
     @include fontFormat($color: $linkHover);
     }
+  }
+  @media screen and #{$smallDesktop} {
+    display: none;
   }
 }

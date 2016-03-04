@@ -25,6 +25,10 @@ a {
   }
 }
 
+h2 {
+  @extend %textShadow;
+}
+
 
 /**
  * Basic styles for links

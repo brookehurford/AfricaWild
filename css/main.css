@@ -16,7 +16,7 @@ html {
 .mainNav .logo, .mainNav li, .headerTextWrapper .headerText h1, .headerTextWrapper .headerText h3, .primaryButton {
   text-transform: uppercase; }
 
-.gallery #couple h2, .gallery #tour h2, .gallery #safari h2, .gallery #elephants h2, .gallery #ostrich h2, .gallery #giraffe h2 {
+h2 {
   text-shadow: 1px 1px 1px black; }
 
 #couple .icon, #safari .icon, #elephants .icon, #ostrich .icon, #giraffe .icon, #tour .icon {
@@ -77,40 +77,104 @@ a {
       position: relative;
       bottom: 25%;
       left: 10%; }
+    .gallery #couple:hover {
+      cursor: pointer; }
   .gallery #tour {
     width: 50%; }
     .gallery #tour h2 {
       position: relative;
       bottom: 25%;
       left: 10%; }
+    .gallery #tour:hover {
+      cursor: pointer; }
   .gallery #safari {
     width: 25%; }
     .gallery #safari h2 {
       position: relative;
       bottom: 25%;
       left: 10%; }
+    .gallery #safari:hover {
+      cursor: pointer; }
   .gallery #elephants {
     width: 25%; }
     .gallery #elephants h2 {
       position: relative;
       bottom: 25%;
       left: 10%; }
+    .gallery #elephants:hover {
+      cursor: pointer; }
   .gallery #ostrich {
     width: 25%; }
     .gallery #ostrich h2 {
       position: relative;
       bottom: 25%;
       left: 10%; }
+    .gallery #ostrich:hover {
+      cursor: pointer; }
   .gallery #giraffe {
     width: 25%; }
     .gallery #giraffe h2 {
       position: relative;
       bottom: 25%;
       left: 10%; }
+    .gallery #giraffe:hover {
+      cursor: pointer; }
+  @media screen and (max-width: 924px) {
+    .gallery #couple {
+      width: 100%; }
+      .gallery #couple h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #couple:hover {
+        cursor: pointer; }
+    .gallery #tour {
+      width: 100%; }
+      .gallery #tour h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #tour:hover {
+        cursor: pointer; }
+    .gallery #safari {
+      width: 50%; }
+      .gallery #safari h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #safari:hover {
+        cursor: pointer; }
+    .gallery #elephants {
+      width: 50%; }
+      .gallery #elephants h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #elephants:hover {
+        cursor: pointer; }
+    .gallery #ostrich {
+      width: 50%; }
+      .gallery #ostrich h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #ostrich:hover {
+        cursor: pointer; }
+    .gallery #giraffe {
+      width: 50%; }
+      .gallery #giraffe h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #giraffe:hover {
+        cursor: pointer; } }
 
 .mainNav {
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 1046px) {
+    .mainNav {
+      flex-direction: column; } }
   .mainNav .logo {
     color: #fff;
     letter-spacing: 2px;
@@ -118,16 +182,29 @@ a {
     margin-top: 0;
     margin-left: 2.5em;
     padding-top: 1.5em; }
+    @media screen and (max-width: 1046px) {
+      .mainNav .logo {
+        margin: 0 auto; } }
   .mainNav ul {
     list-style-type: none;
     margin: 0 1.5em;
     padding-top: 3.6em;
     display: flex; }
+    @media screen and (max-width: 1140px) {
+      .mainNav ul {
+        margin: 0 1em; } }
+    @media screen and (max-width: 1046px) {
+      .mainNav ul {
+        padding: 3%;
+        justify-content: center; } }
   .mainNav li {
     font-size: 16px;
     color: #fff;
     letter-spacing: 2px;
     margin-right: 3em; }
+    @media screen and (max-width: 1140px) {
+      .mainNav li {
+        font-size: 14px; } }
 
 .secondaryNav {
   height: 50px;
@@ -151,8 +228,15 @@ a {
     height: auto;
     width: 100px;
     margin-right: 3em; }
+    .secondaryNav .search img {
+      height: 40px;
+      width: 20px;
+      margin-top: 6%; }
     .secondaryNav .search:hover {
       color: #fff; }
+  @media screen and (max-width: 1046px) {
+    .secondaryNav {
+      display: none; } }
 
 .header {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/lion-hero.jpg");
@@ -161,7 +245,11 @@ a {
   width: auto;
   display: flex;
   flex-direction: column;
-  background-size: cover; }
+  background-size: cover;
+  transition: height .6s linear; }
+  @media screen and (max-width: 1046px) {
+    .header {
+      height: 50vh; } }
 
 .headerTextWrapper {
   display: flex;
@@ -178,12 +266,19 @@ a {
       color: #fff;
       letter-spacing: 8px;
       line-height: 7px; }
+      @media screen and (max-width: 1046px) {
+        .headerTextWrapper .headerText h1 {
+          font-size: 80px; } }
     .headerTextWrapper .headerText h3 {
       font-size: 20px;
       color: #fff;
       letter-spacing: 5px; }
     .headerTextWrapper .headerText img {
       width: 50px; }
+    @media screen and (max-width: 1046px) {
+      .headerTextWrapper .headerText {
+        height: 70%;
+        width: auto; } }
 
 .headerButton {
   display: flex;
@@ -192,6 +287,11 @@ a {
   height: 38%;
   width: 100%;
   text-align: center; }
+  @media screen and (max-width: 1046px) {
+    .headerButton {
+      display: flex;
+      justify-content: center;
+      margin-top: 5%; } }
 
 .primaryButton {
   color: #000;
@@ -204,7 +304,11 @@ a {
   margin: 0 auto;
   padding-left: 20px;
   border: 2px solid mistyrose;
-  background: mistyrose; }
+  background: mistyrose;
+  transition: all .15s linear; }
+  .primaryButton:hover {
+    color: #000;
+    transform: scale(1.025); }
 
 #triangle-down {
   width: 0;
@@ -239,6 +343,8 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   padding: 1em; }
+  #couple .icon:hover {
+    cursor: pointer; }
 
 #safari .icon {
   height: 72px;
@@ -249,6 +355,8 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   padding: 1em; }
+  #safari .icon:hover {
+    cursor: pointer; }
 
 #elephants .icon {
   height: 72px;
@@ -259,6 +367,8 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   padding: 1em; }
+  #elephants .icon:hover {
+    cursor: pointer; }
 
 #ostrich .icon {
   height: 72px;
@@ -269,6 +379,8 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   padding: 1em; }
+  #ostrich .icon:hover {
+    cursor: pointer; }
 
 #giraffe .icon {
   height: 72px;
@@ -279,6 +391,8 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   padding: 1em; }
+  #giraffe .icon:hover {
+    cursor: pointer; }
 
 #tour .icon {
   height: 72px;
@@ -289,5 +403,7 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   padding: 1em; }
+  #tour .icon:hover {
+    cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

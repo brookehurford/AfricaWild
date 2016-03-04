@@ -12,6 +12,11 @@
   padding-left: 20px;
   border: 2px solid $primaryButton;
   background: $primaryButton;
+  transition: all .15s linear;
+  &:hover {
+    color: $black;
+    transform: scale(1.025);
+  }
 }
 
 #triangle-down {

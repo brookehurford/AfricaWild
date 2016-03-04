@@ -8,6 +8,10 @@
   @include size(auto 100vh);
   @include flexbox($direction: column);
   background-size: cover;
+  transition: height .6s linear;
+  @media screen and #{$smallDesktop} {
+    height: 50vh;
+  }
 }
 
 .headerTextWrapper {
@@ -20,6 +24,9 @@
       @include fontFormat(110px, $white, $l-spacing: 8px, $l-height: 7px);
       @extend %titleFont;
       @extend %uppercase;
+      @media screen and #{$smallDesktop} {
+        @include fontFormat(80px)
+      }
     }
     h3 {
       @include fontFormat(20px, $white, $l-spacing: 5px);
@@ -29,6 +36,9 @@
     img {
       width: 50px;
     }
+    @media screen and #{$smallDesktop} {
+      @include size(auto 70%);
+    }
   }
 }
 
@@ -36,4 +46,8 @@
   @include flexbox($direction: column, $justify: flex-end);
   @include size(100% 38%);
   text-align: center;
+  @media screen and #{$smallDesktop} {
+    @include flexbox($justify: center);
+    margin-top: 5%;
+  }
 }
