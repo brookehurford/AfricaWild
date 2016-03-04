@@ -7,3 +7,67 @@
   background: $white;
   margin: 0 auto;
 }
+
+.galleryLine {
+  @include size(70px 5px);
+  background: $primaryButton;
+  position: relative;
+  bottom: 24%;
+  left: 10%;
+}
+
+#couple .icon {
+  @include size(72px 72px);
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba($black, 0.5);
+  border-radius: 50%;
+  padding: 1em;
+}
+#safari .icon {
+  @include size(72px 72px);
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba($black, 0.5);
+  border-radius: 50%;
+  padding: 1em;
+}
+#elephants .icon {
+  @include size(72px 72px);
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba($black, 0.5);
+  border-radius: 50%;
+  padding: 1em;
+}
+#ostrich .icon {
+  @include size(72px 72px);
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba($black, 0.5);
+  border-radius: 50%;
+  padding: 1em;
+}
+#giraffe .icon {
+  @include size(72px 72px);
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba($black, 0.5);
+  border-radius: 50%;
+  padding: 1em;
+}
+
+#tour .icon {
+  @include size(72px 72px);
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba($black, 0.5);
+  border-radius: 50%;
+  padding: 1em;
+}

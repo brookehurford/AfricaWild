@@ -215,4 +215,72 @@ a {
   background: #fff;
   margin: 0 auto; }
 
+.galleryLine {
+  height: 5px;
+  width: 70px;
+  background: mistyrose;
+  position: relative;
+  bottom: 24%;
+  left: 10%; }
+
+#couple .icon {
+  height: 72px;
+  width: 72px;
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1em; }
+
+#safari .icon {
+  height: 72px;
+  width: 72px;
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1em; }
+
+#elephants .icon {
+  height: 72px;
+  width: 72px;
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1em; }
+
+#ostrich .icon {
+  height: 72px;
+  width: 72px;
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1em; }
+
+#giraffe .icon {
+  height: 72px;
+  width: 72px;
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1em; }
+
+#tour .icon {
+  height: 72px;
+  width: 72px;
+  position: relative;
+  bottom: 80%;
+  left: 45%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1em; }
+
 /*# sourceMappingURL=main.css.map */
