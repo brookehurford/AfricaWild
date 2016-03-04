@@ -1,3 +1,26 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.primaryButton {
+  @extend %uppercase;
+  @extend %headerFont;
+  @include fontFormat($color: $black, $l-spacing: 2px);
+  @include size(200px 60px);
+  @include flexbox(flex, center, $align-items: center);
+  margin: 0 auto;
+  padding-left: 20px;
+  border: 2px solid $primaryButton;
+  background: $primaryButton;
+}
+
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 12px solid $primaryButton;
+  position: relative;
+  top: 35px;
+  right: 70px;
+}

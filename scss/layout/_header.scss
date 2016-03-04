@@ -3,7 +3,37 @@
 // -----------------------------------------------------------------------------
 
 .header {
-  @include background-image(url("#{$img-path}/lion-hero.jpg"), linear-gradient(white 0, yellow 50%, transparent 50%));
-  height: 100vh;
+  @include background-image(linear-gradient(rgba($black, 0.5),
+    rgba($black, 0)),url("#{$img-path}/lion-hero.jpg"));
+  @include size(auto 100vh);
+  @include flexbox($direction: column);
   background-size: cover;
+}
+
+.headerTextWrapper {
+  @include flexbox(flex, center, flex-end);
+  @include size(100% 40%);
+  text-align: center;
+  .headerText {
+    @include size(70% auto);
+    h1 {
+      @include fontFormat(110px, $white, $l-spacing: 8px, $l-height: 7px);
+      @extend %titleFont;
+      @extend %uppercase;
+    }
+    h3 {
+      @include fontFormat(20px, $white, $l-spacing: 5px);
+      @extend %headerFont;
+      @extend %uppercase;
+    }
+    img {
+      width: 50px;
+    }
+  }
+}
+
+.headerButton {
+  @include flexbox($direction: column, $justify: flex-end);
+  @include size(100% 38%);
+  text-align: center;
 }

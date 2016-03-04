@@ -4,8 +4,14 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.mainNav .logo {
+.mainNav .logo, .headerTextWrapper .headerText h1 {
   font-family: 'Poiret One', cursive; }
+
+.mainNav li, .headerTextWrapper .headerText h3, .primaryButton {
+  font-family: 'Fjalla One', sans-serif; }
+
+.mainNav .logo, .mainNav li, .headerTextWrapper .headerText h1, .headerTextWrapper .headerText h3, .primaryButton {
+  text-transform: uppercase; }
 
 *,
 *::before,
@@ -28,26 +34,92 @@ a {
  * Basic typography style for copy text
  */
 .mainNav {
-  border: 2px solid rosybrown;
   display: flex;
   justify-content: space-between; }
   .mainNav .logo {
+    color: #fff;
+    letter-spacing: 2px;
     font-size: 2em;
-    border: 2px solid goldenrod;
     margin-top: 0;
-    margin-left: 2em; }
+    margin-left: 2.5em;
+    padding-top: 1.5em; }
   .mainNav ul {
-    border: 2px solid dodgerblue;
     list-style-type: none;
-    margin: 0;
+    margin: 0 1.5em;
+    padding-top: 3.6em;
     display: flex; }
   .mainNav li {
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 2px;
     margin-right: 3em; }
 
 .header {
-  background-image: url("../img/lion-hero.jpg"), -webkit-linear-gradient(white 0, yellow 50%, transparent 50%);
-  background-image: url("../img/lion-hero.jpg"), linear-gradient(to   , yellow 50%, transparent 50%);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/lion-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/lion-hero.jpg");
   height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
   background-size: cover; }
+
+.headerTextWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 40%;
+  width: 100%;
+  text-align: center; }
+  .headerTextWrapper .headerText {
+    height: auto;
+    width: 70%; }
+    .headerTextWrapper .headerText h1 {
+      font-size: 110px;
+      color: #fff;
+      letter-spacing: 8px;
+      line-height: 7px; }
+    .headerTextWrapper .headerText h3 {
+      font-size: 20px;
+      color: #fff;
+      letter-spacing: 5px; }
+    .headerTextWrapper .headerText img {
+      width: 50px; }
+
+.headerButton {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 38%;
+  width: 100%;
+  text-align: center; }
+
+.primaryButton {
+  color: #000;
+  letter-spacing: 2px;
+  height: 60px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 20px;
+  border: 2px solid mistyrose;
+  background: mistyrose; }
+
+#triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 12px solid mistyrose;
+  position: relative;
+  top: 35px;
+  right: 70px; }
+
+.thickLine {
+  height: 7px;
+  width: 250px;
+  background: #fff;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

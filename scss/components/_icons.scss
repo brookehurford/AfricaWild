@@ -1,0 +1,9 @@
+// =================
+// Icons
+// =================
+
+.thickLine {
+  @include size(250px 7px);
+  background: $white;
+  margin: 0 auto;
+}
