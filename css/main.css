@@ -19,6 +19,13 @@ html {
 .gallery #couple h2, .gallery #safari h2, .gallery #elephants h2, .gallery #ostrich h2, .gallery #giraffe h2, .gallery #tour h2 {
   text-shadow: 1px 1px 1px black; }
 
+#couple .icon, #safari .icon, #elephants .icon, #ostrich .icon, #giraffe .icon, #tour .icon {
+  transition: all 0.2s linear; }
+
+#couple .icon:hover, #safari .icon:hover, #elephants .icon:hover, #ostrich .icon:hover, #giraffe .icon:hover, #tour .icon:hover {
+  -webkit-transform: scale3d(1.3, 1.3, 1);
+  transform: scale3d(1.3, 1.3, 1); }
+
 *,
 *::before,
 *::after {
