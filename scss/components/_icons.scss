@@ -16,4 +16,20 @@
   left: 10%;
 }
 
+.navIcon {
+  @include size(40px 40px);
+  @include flexbox(flex, $justify: space-around, $align-items: center);
+  flex-wrap: wrap;
+  background-color: rgba($black, .5);
+  padding: .4em;
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  cursor: pointer;
+  .iconbar {
+    @include size(30px 3px);
+    background-color: white;
+  }
+}
+
 @include galleryIcon(couple, safari, elephants, ostrich, giraffe, tour);

@@ -205,6 +205,9 @@ a {
     @media screen and (max-width: 1140px) {
       .mainNav li {
         font-size: 14px; } }
+  @media screen and (max-width: 730px) {
+    .mainNav {
+      display: none; } }
 
 .secondaryNav {
   height: 50px;
@@ -238,6 +241,37 @@ a {
     .secondaryNav {
       display: none; } }
 
+.mobileNav {
+  display: none;
+  padding: 0;
+  margin: 0; }
+  @media screen and (max-width: 730px) {
+    .mobileNav {
+      display: block; }
+      .mobileNav .mobileMenu {
+        position: absolute;
+        top: 0px;
+        background-color: #494C3F;
+        height: 100vh;
+        width: 100%;
+        z-index: 10;
+        font-size: 24px;
+        color: #fff;
+        letter-spacing: 2.5px;
+        line-height: 80px; }
+        .mobileNav .mobileMenu ul {
+          font-family: 'Fjalla One', sans-serif;
+          list-style-type: none;
+          padding: 30% 0;
+          text-align: center; }
+        .mobileNav .mobileMenu h1 {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 42px;
+          position: absolute;
+          top: -10px;
+          right: 30px;
+          cursor: pointer; } }
+
 .header {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/lion-hero.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/lion-hero.jpg");
@@ -246,7 +280,7 @@ a {
   display: flex;
   flex-direction: column;
   background-size: cover;
-  transition: height .6s linear; }
+  transition: height .5s linear; }
   @media screen and (max-width: 1046px) {
     .header {
       height: 50vh; } }
@@ -269,6 +303,9 @@ a {
       @media screen and (max-width: 1046px) {
         .headerTextWrapper .headerText h1 {
           font-size: 80px; } }
+      @media screen and (max-width: 730px) {
+        .headerTextWrapper .headerText h1 {
+          font-size: 48px; } }
     .headerTextWrapper .headerText h3 {
       font-size: 20px;
       color: #fff;
@@ -333,6 +370,24 @@ a {
   position: relative;
   bottom: 24%;
   left: 10%; }
+
+.navIcon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: .4em;
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  cursor: pointer; }
+  .navIcon .iconbar {
+    height: 3px;
+    width: 30px;
+    background-color: white; }
 
 #couple .icon {
   height: 72px;

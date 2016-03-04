@@ -8,7 +8,7 @@
   @include size(auto 100vh);
   @include flexbox($direction: column);
   background-size: cover;
-  transition: height .6s linear;
+  transition: height .5s linear;
   @media screen and #{$smallDesktop} {
     height: 50vh;
   }
@@ -26,6 +26,9 @@
       @extend %uppercase;
       @media screen and #{$smallDesktop} {
         @include fontFormat(80px)
+      }
+      @media screen and #{$mobile} {
+        @include fontFormat(48px)
       }
     }
     h3 {
