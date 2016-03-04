@@ -19,14 +19,21 @@
       @include fontFormat ($color: $white)
     }
   }
-  #safari {
+  #couple {
     width: 50%;
     h2 {
       @include position(relative, null null 25% 10%);
       @extend %textShadow;
     }
   }
-  #beach {
+  #safari {
+    width: 25%;
+    h2 {
+      @include position(relative, null null 25% 10%);
+      @extend %textShadow;
+    }
+  }
+  #elephants {
     width: 25%;
     h2 {
       @include position(relative, null null 25% 10%);
@@ -34,13 +41,6 @@
     }
   }
   #ostrich {
-    width: 25%;
-    h2 {
-      @include position(relative, null null 25% 10%);
-      @extend %textShadow;
-    }
-  }
-  #couple {
     width: 25%;
     h2 {
       @include position(relative, null null 25% 10%);

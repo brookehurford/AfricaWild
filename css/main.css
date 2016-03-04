@@ -16,7 +16,7 @@ html {
 .mainNav .logo, .mainNav li, .headerTextWrapper .headerText h1, .headerTextWrapper .headerText h3, .primaryButton {
   text-transform: uppercase; }
 
-.gallery #safari h2, .gallery #beach h2, .gallery #ostrich h2, .gallery #couple h2, .gallery #giraffe h2, .gallery #tour h2 {
+.gallery #couple h2, .gallery #safari h2, .gallery #elephants h2, .gallery #ostrich h2, .gallery #giraffe h2, .gallery #tour h2 {
   text-shadow: 1px 1px 1px black; }
 
 *,
@@ -64,27 +64,27 @@ a {
       display: block; }
     .gallery .galleryItem h2 {
       color: #fff; }
-  .gallery #safari {
+  .gallery #couple {
     width: 50%; }
+    .gallery #couple h2 {
+      position: relative;
+      bottom: 25%;
+      left: 10%; }
+  .gallery #safari {
+    width: 25%; }
     .gallery #safari h2 {
       position: relative;
       bottom: 25%;
       left: 10%; }
-  .gallery #beach {
+  .gallery #elephants {
     width: 25%; }
-    .gallery #beach h2 {
+    .gallery #elephants h2 {
       position: relative;
       bottom: 25%;
       left: 10%; }
   .gallery #ostrich {
     width: 25%; }
     .gallery #ostrich h2 {
-      position: relative;
-      bottom: 25%;
-      left: 10%; }
-  .gallery #couple {
-    width: 25%; }
-    .gallery #couple h2 {
       position: relative;
       bottom: 25%;
       left: 10%; }
