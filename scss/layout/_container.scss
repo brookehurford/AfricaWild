@@ -19,46 +19,6 @@
       @include fontFormat ($color: $white)
     }
   }
-  #couple {
-    width: 50%;
-    h2 {
-      @include position(relative, null null 25% 10%);
-      @extend %textShadow;
-    }
-  }
-  #safari {
-    width: 25%;
-    h2 {
-      @include position(relative, null null 25% 10%);
-      @extend %textShadow;
-    }
-  }
-  #elephants {
-    width: 25%;
-    h2 {
-      @include position(relative, null null 25% 10%);
-      @extend %textShadow;
-    }
-  }
-  #ostrich {
-    width: 25%;
-    h2 {
-      @include position(relative, null null 25% 10%);
-      @extend %textShadow;
-    }
-  }
-  #giraffe {
-    width: 25%;
-    h2 {
-      @include position(relative, null null 25% 10%);
-      @extend %textShadow;
-    }
-  }
-  #tour {
-    width: 50%;
-    h2 {
-      @include position(relative, null null 25% 10%);
-      @extend %textShadow;
-    }
-  }
+  @include galleryContent(50%, couple, tour);
+  @include galleryContent(25%, safari, elephants, ostrich, giraffe);
 }

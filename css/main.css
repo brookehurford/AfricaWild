@@ -16,7 +16,7 @@ html {
 .mainNav .logo, .mainNav li, .headerTextWrapper .headerText h1, .headerTextWrapper .headerText h3, .primaryButton {
   text-transform: uppercase; }
 
-.gallery #couple h2, .gallery #safari h2, .gallery #elephants h2, .gallery #ostrich h2, .gallery #giraffe h2, .gallery #tour h2 {
+.gallery #couple h2, .gallery #tour h2, .gallery #safari h2, .gallery #elephants h2, .gallery #ostrich h2, .gallery #giraffe h2 {
   text-shadow: 1px 1px 1px black; }
 
 #couple .icon, #safari .icon, #elephants .icon, #ostrich .icon, #giraffe .icon, #tour .icon {
@@ -77,6 +77,12 @@ a {
       position: relative;
       bottom: 25%;
       left: 10%; }
+  .gallery #tour {
+    width: 50%; }
+    .gallery #tour h2 {
+      position: relative;
+      bottom: 25%;
+      left: 10%; }
   .gallery #safari {
     width: 25%; }
     .gallery #safari h2 {
@@ -98,12 +104,6 @@ a {
   .gallery #giraffe {
     width: 25%; }
     .gallery #giraffe h2 {
-      position: relative;
-      bottom: 25%;
-      left: 10%; }
-  .gallery #tour {
-    width: 50%; }
-    .gallery #tour h2 {
       position: relative;
       bottom: 25%;
       left: 10%; }

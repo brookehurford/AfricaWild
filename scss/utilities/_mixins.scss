@@ -18,6 +18,18 @@
   align-self: $align-self;
 }
 
+@mixin galleryContent ($width, $names...) {
+  @each $name in $names {
+    ##{$name} {
+      width: $width;
+      h2 {
+        @include position(relative, null null 25% 10%);
+        @extend %textShadow;
+      }
+    }
+  }
+}
+
 @mixin galleryIcon ($names...) {
   @each $name in $names {
     ##{$name} .icon {
