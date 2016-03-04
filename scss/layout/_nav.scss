@@ -1,0 +1,21 @@
+.mainNav {
+  .logo {
+    @extend %titleFont;
+    font-size: 2em;
+    border: 2px solid goldenrod;
+    margin-top: 0;
+    margin-left: 2em;
+  }
+  border: 2px solid rosybrown;
+  display: flex;
+  justify-content: space-between;
+  ul {
+    border: 2px solid dodgerblue;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+  }
+  li {
+    margin-right: 3em;
+  }
+}

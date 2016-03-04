@@ -1,3 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.header {
+  @include background-image(url("#{$img-path}/lion-hero.jpg"), linear-gradient(white 0, yellow 50%, transparent 50%));
+  height: 100vh;
+  background-size: cover;
+}
