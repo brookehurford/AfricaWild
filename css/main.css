@@ -168,6 +168,55 @@ a {
         left: 10%; }
       .gallery #giraffe:hover {
         cursor: pointer; } }
+  @media screen and (max-width: 730px) {
+    .gallery #couple {
+      width: 100%; }
+      .gallery #couple h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #couple:hover {
+        cursor: pointer; }
+    .gallery #tour {
+      width: 100%; }
+      .gallery #tour h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #tour:hover {
+        cursor: pointer; }
+    .gallery #safari {
+      width: 100%; }
+      .gallery #safari h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #safari:hover {
+        cursor: pointer; }
+    .gallery #elephants {
+      width: 100%; }
+      .gallery #elephants h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #elephants:hover {
+        cursor: pointer; }
+    .gallery #ostrich {
+      width: 100%; }
+      .gallery #ostrich h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #ostrich:hover {
+        cursor: pointer; }
+    .gallery #giraffe {
+      width: 100%; }
+      .gallery #giraffe h2 {
+        position: relative;
+        bottom: 25%;
+        left: 10%; }
+      .gallery #giraffe:hover {
+        cursor: pointer; } }
 
 .mainNav {
   display: flex;
@@ -312,6 +361,9 @@ a {
       letter-spacing: 5px; }
     .headerTextWrapper .headerText img {
       width: 50px; }
+      @media screen and (max-width: 730px) {
+        .headerTextWrapper .headerText img {
+          margin-top: 20%; } }
     @media screen and (max-width: 1046px) {
       .headerTextWrapper .headerText {
         height: 70%;
@@ -329,6 +381,9 @@ a {
       display: flex;
       justify-content: center;
       margin-top: 5%; } }
+  @media screen and (max-width: 730px) {
+    .headerButton {
+      margin-top: 20%; } }
 
 .primaryButton {
   color: #000;

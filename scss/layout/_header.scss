@@ -38,6 +38,9 @@
     }
     img {
       width: 50px;
+      @media screen and #{$mobile} {
+        margin-top: 20%;
+      }
     }
     @media screen and #{$smallDesktop} {
       @include size(auto 70%);
@@ -52,5 +55,8 @@
   @media screen and #{$smallDesktop} {
     @include flexbox($justify: center);
     margin-top: 5%;
+  }
+  @media screen and #{$mobile} {
+    margin-top: 20%;
   }
 }
