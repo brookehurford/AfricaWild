@@ -3,16 +3,14 @@
 // =================
 
 .mainNav {
-  display: flex;
-  justify-content: space-between;
+  @include flexbox($justify: space-between);
   @media screen and #{$smallDesktop} {
-    flex-direction: column;
+    @include flexbox($direction: column);
   }
   .logo {
     @extend %uppercase;
     @extend %titleFont;
-    @include fontFormat($color: $white, $l-spacing: 2px);
-    font-size: 2em;
+    @include fontFormat(2em, $color: $white, $l-spacing: 2px);
     margin-top: 0;
     margin-left: 2.5em;
     padding-top: 1.5em;
@@ -24,13 +22,13 @@
     list-style-type: none;
     margin: 0 1.5em;
     padding-top: 3.6em;
-    display: flex;
+    @include flexbox();
     @media screen and #{$mediumDesktop} {
           margin: 0 1em;
     }
     @media screen and #{$smallDesktop} {
       padding: 3%;
-      justify-content: center;
+      @include flexbox($justify: center);
     }
   }
   li {
@@ -38,8 +36,9 @@
     @extend %uppercase;
     @include fontFormat(16px, $white, $l-spacing: 2px);
     margin-right: 3em;
+    height: 30px;
     @media screen and #{$mediumDesktop} {
-      font-size: 14px;
+      @include fontFormat(14px);
     }
   }
   @media screen and #{$mobile} {
@@ -55,8 +54,8 @@
   @include size(100% 50px);
   @include flexbox($justify: space-between);
   @include fontFormat(16px, $bodyText, lighter, $l-spacing: 1.5px);
+  @include size(80% auto);
   @extend %bodyFont;
-  width: 80%;
   margin: 1.5em auto;
   ul {
     @include flexbox();
@@ -93,11 +92,9 @@
   @media screen and #{$mobile} {
     display: block;
     .mobileMenu {
-      position: absolute;
-      top: 0px;
+      @include position(absolute, 0px null null null);
+      @include size(100% 100vh);
       background-color: $bodyBackground;
-      height: 100vh;
-      width: 100%;
       z-index: 10;
       @include fontFormat(24px, $color: $white, $l-spacing: 2.5px, $l-height: 80px);
       ul {
@@ -109,9 +106,7 @@
       h1 {
         font-family: 'Open Sans', sans-serif;
         font-size: 42px;
-        position: absolute;
-        top: -10px;
-        right: 30px;
+        @include position(absolute, -10px 30px null null);
         cursor: pointer;
       }
     }

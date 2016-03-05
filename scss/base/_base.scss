@@ -20,6 +20,7 @@ body {
 
 a {
   @include fontFormat($color: $bodyText);
+  text-decoration: none;
   &:hover {
   @include fontFormat($color: $linkHover);
   }
@@ -27,12 +28,4 @@ a {
 
 h2 {
   @extend %textShadow;
-}
-
-
-/**
- * Basic styles for links
- */
-a {
-  text-decoration: none;
 }

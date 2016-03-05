@@ -10,7 +10,7 @@
   background-size: cover;
   transition: height .5s linear;
   @media screen and #{$smallDesktop} {
-    height: 50vh;
+    @include size(auto 50vh);
   }
 }
 

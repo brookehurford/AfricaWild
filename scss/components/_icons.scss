@@ -2,6 +2,8 @@
 // Icons
 // =================
 
+@include galleryIcon(couple, safari, elephants, ostrich, giraffe, tour);
+
 .thickLine {
   @include size(250px 7px);
   background: $white;
@@ -10,26 +12,26 @@
 
 .galleryLine {
   @include size(70px 5px);
+  @include position(relative, null null 24% 10%);
   background: $primaryButton;
-  position: relative;
-  bottom: 24%;
-  left: 10%;
+}
+
+.navLine {
+  @include size(75px 7px);
+  background: $white;
+  margin-top: 10px;
 }
 
 .navIcon {
   @include size(40px 40px);
   @include flexbox(flex, $justify: space-around, $align-items: center);
+  @include position(absolute, 35px 20px null null);
   flex-wrap: wrap;
   background-color: rgba($black, .5);
   padding: .4em;
-  position: absolute;
-  right: 20px;
-  top: 35px;
   cursor: pointer;
   .iconbar {
     @include size(30px 3px);
     background-color: white;
   }
 }
-
-@include galleryIcon(couple, safari, elephants, ostrich, giraffe, tour);
